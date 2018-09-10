@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <input type="checkbox" name="flipper-checkbox" id="flipper-checkbox" class="flipper-checkbox"hidden/>
+
+        <div class="form-container">
+            <!--Front Side-->
+            <div class="form-login">
+                <h1 class="form-header">Login</h1>
+
+                <form action="#" id="loginform" method="POST" class="form">
+                    <fieldset class="form-group">
+                        <label for="email" class="label-icon fa fa-at">
+                        </label>
+                        <input type="email" id="mail" name="mail" class="form-element" placeholder="Email" required/>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="password" class="label-icon fa fa-lock">
+                        </label>
+                        <input name="password" type="password" id="password" class="form-element" placeholder="Password" required/>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox" class="checkbox--forget"class="icon--checkbox fa fa-check"/>
+                            Remember me
+                        </label>
+                        <a href="#" class="form-link link--right">Forget your password?</a>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <input class="form-button" type="submit" value="Login"/>
+                    </fieldset>
+                    <p>Not a member yet?
+                        <label for="flipper-checkbox" class="form-link"> Create your account</label>
+                    </p>
+                    
+                </form>
+            </div>
+
+            <!--Back Side-->
+            <div class="form-signup">
+                <h1 class="form-header">Sign Up</h1>
+
+                <form action="#" id="signupform" method="POST" class="form">
+                    <fieldset class="form-group">
+                        <label for="signUpName"  class="label-icon fa fa-user">
+                        </label>
+                        <input type="text" id="signUpName" name="signUpName" class="form-element" placeholder="Full Name" required>
+                    </fieldset>
+                    <fieldset class="form-group">
+                            <label for="signUpMail" class="label-icon fa fa-at"></label>
+                            <input type="email" id="signUpMail" name="mail" class="form-element" placeholder="Email" required/>
+                    </fieldset>
+                    <fieldset class="form-group">
+                            <label for="signUpPassword" class="label-icon fa fa-lock">
+                            </label>
+                            <input name="signUpPassword" type="password" id="signUpPassword" class="form-element" placeholder="Password" required/>
+                    </fieldset>
+                    <fieldset class="form-group">
+                            <label for="signUpPasswordRepeat" class="label-icon fa fa-lock"></label>
+                            <input name="signUpPassword" type="password" id="signUpPasswordRepeat" class="form-element" placeholder=" RepeatPassword" required/>
+                    </fieldset>
+                    <fieldset class="form-group">
+                            <input class="form-button" type="submit" value="Sign Up"/>
+                        </fieldset>
+                        <small>Are you a member?
+                            <label for="flipper-checkbox" class="form-link"> click here to Login</label>
+                        </small>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
